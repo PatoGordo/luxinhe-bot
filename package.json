@@ -1,0 +1,14 @@
+{
+  "name": "discord-bot-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "repository": "https://github.com/PatoGordo/HentayBott",
+  "author": "repl.it user <@PatoGordo>"
+}
