@@ -28,7 +28,7 @@ module.exports.run = async(client,message,args)=>{
       .setTitle("Vergonhinha 😳")
       .setAuthor(message.author.tag, avatar)
       .setImage(randomGif)
-      .setDescription(`${message.author.username} esta envergonhado😳`)
+      .setDescription(`${message.author.username} está envergonhado😳`)
     return message.reply(messageEmbed)
   }
 
