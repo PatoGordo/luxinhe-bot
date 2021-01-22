@@ -9,12 +9,11 @@ module.exports.run = async(client,message,args)=>{
   const messageEmbed = new discord.MessageEmbed()
     .setColor(randomColor)
     .setAuthor(config.bot_name)
-    .setDescription(`O bot usa o prefixo **"${prefix}"**\nEste bot foi feito para o servidor da luxinhe, mas se quiser adicionar ele ao seu servidor use o link de convite no fim da pagina`)
-    .setTitle(`Lista de comandos: `)
+    .setDescription(`O bot usa o prefixo **"${prefix}"**\nEste bot foi feito para o servidor da luxinhe, mas se quiser adicionar ele ao seu servidor use o link de convite no fim da pagina \n\n**Lista de comandos** `)
     .addFields(
       {
         name: `**${prefix}random**`,
-        value: "O bot vai mandar uma imagem aleatoria da luxinhe",
+        value: "O bot vai mandar uma imagem aleatoria da galeria de imagens do bot da luxinhe.",
       },
       {
         name: `**${prefix}adicionar-canal**`,
