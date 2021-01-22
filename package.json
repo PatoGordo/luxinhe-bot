@@ -7,7 +7,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
   },
   "repository": "https://github.com/PatoGordo/HentayBott",
   "author": "repl.it user <@PatoGordo>"
