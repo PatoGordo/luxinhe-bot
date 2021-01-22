@@ -54,7 +54,7 @@ module.exports = (client,message) => {
           resp.data.result.map(channel_id => {
             const messageEmbed = new discord.MessageEmbed()
               .setColor(randomColor)
-              .setAuthor(config.bot_name)
+              .setAuthor(config.bot_name, client.user.displayAvatarURL())
               .setTitle(doc.data.result[index].message)
               .setImage(urls[Math.floor(Math.random() * urls.length)])
             let channel = client.channels.cache.get(channel_id.channel_id)

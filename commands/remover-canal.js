@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     .then(res => {})
   const messageEmbed = new discord.MessageEmbed()
     .setColor('#FF1800')
-    .setAuthor(config.bot_name)
+    .setAuthor(config.bot_name, client.user.displayAvatarURL())
     .setTitle(`O canal "${message.channel.name}" foi removido com sucesso`)
     .setDescription(`Agora o canal "${message.channel.name}" não vai mais receber notificações de bomdia`)
   message.channel.send(messageEmbed)

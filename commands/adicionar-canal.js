@@ -8,7 +8,7 @@ module.exports.run = async(client,message,args)=>{
   .then(res => {})
   const messageEmbed = new discord.MessageEmbed()
     .setColor('#4BFF86')
-    .setAuthor(config.bot_name)
+    .setAuthor(config.bot_name, client.user.displayAvatarURL())
     .setTitle(`O canal "${message.channel.name}" foi adicionado com sucesso`)
     .setDescription(`Agora o canal "${message.channel.name}" vai receber notificações de bom dia.`)
   message.channel.send(messageEmbed)

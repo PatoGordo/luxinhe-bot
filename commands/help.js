@@ -8,7 +8,7 @@ module.exports.run = async(client,message,args)=>{
 
   const messageEmbed = new discord.MessageEmbed()
     .setColor(randomColor)
-    .setAuthor(config.bot_name)
+    .setAuthor(config.bot_name, client.user.displayAvatarURL())
     .setDescription(`O bot usa o prefixo **"${prefix}"**\nEste bot foi feito para o servidor da luxinhe, mas se quiser adicionar ele ao seu servidor use o link de convite no fim da pagina \n\n**Lista de comandos** `)
     .addFields(
       {
