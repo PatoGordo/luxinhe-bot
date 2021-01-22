@@ -33,7 +33,7 @@ module.exports.run = async(client,message,args)=>{
       },
       {
         name: `**${prefix}envergonhado**`,
-        value: `O bot vai mandar um gif de vergonha marcando quem abraçou e quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
+        value: `O bot vai mandar um gif de vergonha marcando quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
       },
       {
         name: `**${prefix}ping**`,
