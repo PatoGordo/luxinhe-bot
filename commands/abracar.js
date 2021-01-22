@@ -19,6 +19,7 @@ module.exports.run = async(client,message,args)=>{
 
   var randomGif = gifs[Math.floor(Math.random() * gifs.length)]
   let user = message.mentions.users.first() || client.users.cache.get(args[0])
+  let avatar = message.author.displayAvatarURL({format: "png"})
   if (!user){
     return message.reply(`Quer um abraço 😞`)
   }
@@ -27,8 +28,9 @@ module.exports.run = async(client,message,args)=>{
 
   const messageEmbed = new discord.MessageEmbed()
     .setColor(randomColor)
-    .setAuthor(config.bot_name)
+    .setTitle("Abraço 🥰😘")
+    .setAuthor(message.author.tag, avatar)
     .setImage(randomGif)
-    .setTitle(`${message.author.username} **abraçou** ${user.username} 🥰`)
+    .setDescription(`${message.author.username} **abraçou** ${user.username} 🥰`)
   message.channel.send(messageEmbed)
 }
