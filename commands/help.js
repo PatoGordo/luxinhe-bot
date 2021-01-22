@@ -32,6 +32,10 @@ module.exports.run = async(client,message,args)=>{
         value: `O bot vai mandar um gif de abraço marcando quem abraçou e quem foi abraçado, ex: "**${prefix}abracar @alguém**"`,
       },
       {
+        name: `**${prefix}envergonhado**`,
+        value: `O bot vai mandar um gif de vergonha marcando quem abraçou e quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
+      },
+      {
         name: `**${prefix}ping**`,
         value: `O bot vai mostrar o ping da API e do BOT`,
       },
