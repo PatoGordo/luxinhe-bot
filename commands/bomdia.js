@@ -42,7 +42,7 @@ module.exports.run = async(client,message,args)=>{
 
       const messageEmbed = new discord.MessageEmbed()
         .setColor(randomColor)
-        .setAuthor("LuxinheBot")
+        .setAuthor(config.bot_name)
         .setTitle(doc.data.result[index].message)
         .setImage(urls[Math.floor(Math.random() * urls.length)])
 
