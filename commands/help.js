@@ -32,6 +32,14 @@ module.exports.run = async(client,message,args)=>{
         value: `O bot vai mandar um gif de abraço marcando quem abraçou e quem foi abraçado, ex: "**${prefix}abracar @alguém**"`,
       },
       {
+        name: `**${prefix}beijar**`,
+        value: `O bot vai mandar um gif de beijo marcando quem beijou e quem foi beijado, ex: "**${prefix}beijar @alguém**"`,
+      },
+      {
+        name: `**${prefix}se-assumir**`,
+        value: `O bot vai mandar um motivo aleatório que você se assumiu.`,
+      },
+      {
         name: `**${prefix}envergonhado**`,
         value: `O bot vai mandar um gif de vergonha marcando quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
       },
