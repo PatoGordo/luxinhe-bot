@@ -29,7 +29,26 @@ module.exports.run = async(client,message,args)=>{
     "casado",
     "solteiro",
     "maquina de lavar roupa arno 50L",
-    "flash player"
+    "flash player(em breve será removido do nosso sistema 😟)",
+		"dono da boca",
+		"gado da luxinhe",
+		"pinto pequeno",
+		"fimosento",
+		"maquina do sexo 😎",
+		"brocha",
+		"apaixonado por mim 😳👉👈",
+		"submisso",
+		"aspirador de pó",
+		"fedorento",
+		"cherozin",
+		"gordo",
+		"magro",
+		"um cachorro comunista",
+		"uma fada sensata",
+		"usuário de twitter",
+		"apaixonado pela belle delphine🤢🤮",
+		"apaixonado pela tigressa vip 🤢🤮",
+		"ser um zé ninguém"
   ]
 
   var randomPossibilite = possibilities[Math.floor(Math.random() * possibilities.length)]
