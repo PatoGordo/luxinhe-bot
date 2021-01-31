@@ -23,6 +23,10 @@ module.exports.run = async(client,message,args)=>{
         name: `**${prefix}remover-canal**`,
         value: "O bot vai remover o canal da lista de canais a receber bom dia.",
       },
+			{
+        name: `**${prefix}sugerir**`,
+        value: `Mandar sugestão para o bot, ex: "${prefix}sugerir adicão de um comando de carinho"`,
+      },
       {
         name: `**${prefix}bomdia**`,
         value: "O bot vai mandar uma mensagem de bom dia aleatoria, com uma imagem de bom dia aleatória, no chat.",
