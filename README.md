@@ -10,6 +10,8 @@
 
 > A simple template for programming discord bots using js.
 
+<a className="header-button" href="https://discord.com/api/oauth2/authorize?client_id=795791132197781564&permissions=523328&scope=bot" target="_blanck">Convidar Bot</a>
+
 ## Usage
 
 ```sh
