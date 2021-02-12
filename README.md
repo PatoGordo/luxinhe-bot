@@ -1,39 +1,39 @@
-<h1 align="center">Welcome to discord-js-bot-template 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/discord-bot-base" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/discord-bot-base.svg">
-  </a>
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+# Bem vindo ao LuxinheBot 👋
+![Version](https://img.shields.io/badge/version-2.2-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+![Open source](https://img.shields.io/badge/-Open%20Source%20💜-blueviolet)
+[![Twitter: Patogordoo](https://img.shields.io/twitter/follow/Patogordoo.svg?style=social)](https://twitter.com/Patogordoo)
 
-> A simple template for programming discord bots using js.
+> Esse é o LuxinheBot, um simples bot de interação.
 
-<a className="header-button" href="https://discord.com/api/oauth2/authorize?client_id=795791132197781564&permissions=523328&scope=bot" target="_blanck">Convidar Bot</a>
+### 🏠 [Homepage](https://luxinhe-bot.ga)
 
-## Usage
-
+## Como usar?
+Para rodar esse bot no seu computador você precisará do [nodejs](https://nodejs.org/en/download/)
+E precisará também de um bot e o **token(muito importante)** dele [veja esse tutorial caso não saiba como fazer](https://canaltech.com.br/apps/como-criar-bots-para-responder-discord/)
 ```sh
-- Download the code, open in your code editor,
-- Add your bot token on 'config.json',
-- Open the folder in the terminal,
-- And in the terminal use this:
-  - yarn && yarn start
-  Or
-  - yarn add discord.js fs && yarn start
+	- Baixe o codigo e abra no editor de codigo de sua preferencia.
+
+	- crie um arquivo ".env" na raiz do projeto
+	- abra o arquivo ".env" e adicione "TOKEN=<TOKEN_DO_SEU_BOT>"
+
+	- apos isso abra esse diretorio no terminal e escreva "npm install --global yarn"
+	'isso vai instalar o yarn globalmente no seu computador'
+	- e use "yarn && yarn start", para que o node instale todas as dependencias e inicie o bot
 ```
 
-## Author
+## Autor
 
-👤 **repl.it user <@PatoGordo>**
+👤 **PatoGordo**
 
-* Website: patogordo.ga
+* Website: [https://patogordo.ga](https://patogordo.ga)
+* Twitter: [@Patogordoo](https://twitter.com/Patogordoo)
 * Github: [@PatoGordo](https://github.com/PatoGordo)
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+De uma ⭐️ se esse projeto te ajudou!
+
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

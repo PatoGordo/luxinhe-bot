@@ -32,8 +32,12 @@ module.exports.run = async(client,message,args)=>{
         value: "O bot vai mandar uma mensagem de bom dia aleatoria, com uma imagem de bom dia aleatória, no chat.",
       },
       {
-        name: `**${prefix}abraçar || abracar**`,
+        name: `**${prefix}abraço || abraco**`,
         value: `O bot vai mandar um gif de abraço marcando quem abraçou e quem foi abraçado, ex: "**${prefix}abracar @alguém**"`,
+      },
+			{
+        name: `**${prefix}carinho**`,
+        value: `O bot vai mandar um gif de carinho marcando quem recebeu carinho e quem fez carinho, ex: "**${prefix}carinho @alguém**"`,
       },
       {
         name: `**${prefix}beijar**`,
@@ -44,7 +48,7 @@ module.exports.run = async(client,message,args)=>{
         value: `O bot vai mandar um motivo aleatório que você se assumiu.`,
       },
       {
-        name: `**${prefix}envergonhado**`,
+        name: `**${prefix}vergonha**`,
         value: `O bot vai mandar um gif de vergonha marcando quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
       },
       {

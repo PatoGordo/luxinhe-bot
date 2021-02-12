@@ -4,7 +4,7 @@ const config = require('../config.json')
 require('dotenv/config')
 
 module.exports.run = async (client, message, args) => {
-  axios.post("https://luxinhe-bot.herokuapp.com/removechannel" || 'localhost:3000/removechannel', { channel_id: message.channel.id })
+  axios.post("https://luxinhe-bot.herokuapp.com/removechannel", { channel_id: message.channel.id })
     .then(res => {})
   const messageEmbed = new discord.MessageEmbed()
     .setColor('#FF1800')

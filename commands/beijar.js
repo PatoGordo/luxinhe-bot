@@ -33,5 +33,7 @@ module.exports.run = async(client,message,args)=>{
     .setAuthor(message.author.tag, avatar)
     .setImage(randomGif)
     .setDescription(`${message.author.username} **beijou** ${user.username} 😳`)
+  	.setFooter('Clique em 🔁 para retribuir')
   message.channel.send(messageEmbed)
+	.then(message => message.react('🔁'))
 }
