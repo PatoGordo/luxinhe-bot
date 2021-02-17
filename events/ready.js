@@ -15,7 +15,8 @@ module.exports = (client,message) => {
     //0 0 10 * * *
 
     var options = {
-      url: 'https://results.dogpile.com/serp?qc=images&q=' + 'bom dia shitpost',
+			//
+      url: `https://results.dogpile.com/serp?q=bomdia%20shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=f5Q8QcTqCgxF10`,
       method: 'GET',
       headers: {
         'Accept': 'text/html',
@@ -32,7 +33,7 @@ module.exports = (client,message) => {
       var links = $(".image a.link")
 
       var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"))
-			
+
       if (!urls.length) {
         return
       }
@@ -57,8 +58,13 @@ module.exports = (client,message) => {
               .setAuthor(config.bot_name, client.user.displayAvatarURL())
               .setTitle(doc.data.result[index].message)
               .setImage(urls[Math.floor(Math.random() * urls.length)])
+							.setFooter('Não me responsabilizo por qualquer meme ruim!')
             try {
 							client.channels.cache.get(channel_id.channel_id).send(messageEmbed)
+							.then(message => {
+								message.react('⬆️')
+								message.react('⬇️')
+							})
 							// If channel exists: send message
 						} catch (err) {
 							// Else: print error and 1 second after clear console
