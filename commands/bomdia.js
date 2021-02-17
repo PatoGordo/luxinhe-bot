@@ -6,12 +6,12 @@ const config = require('../config.json')
 
 module.exports.run = async(client,message,args)=>{
   var options = {
-    url: 'https://results.dogpile.com/serp?qc=images&q=' + 'bom dia shitpost',
-    method: 'GET',
-    headers: {
-      'Accept': 'text/html',
-      'User-Agent': 'Chrome'
-    }
+    url: `https://results.dogpile.com/serp?q=bomdia%20shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=f5Q8QcTqCgxF10`,
+		method: 'GET',
+		headers: {
+			'Accept': 'text/html',
+			'User-Agent': 'Chrome'
+		}
   }
 
   request(options, (err, res, resBody) => {
@@ -45,8 +45,12 @@ module.exports.run = async(client,message,args)=>{
         .setAuthor(config.bot_name, client.user.displayAvatarURL())
         .setTitle(doc.data.result[index].message)
         .setImage(urls[Math.floor(Math.random() * urls.length)])
-
+				.setFooter('Não me responsabilizo por qualquer meme ruim!')
       message.channel.send(messageEmbed)
+			.then(message => {
+				message.react('⬆️')
+				message.react('⬇️')
+			})
     })
   })
 }
