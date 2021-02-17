@@ -32,8 +32,7 @@ module.exports = (client,message) => {
       var links = $(".image a.link")
 
       var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"))
-
-      //console.log(urls)
+			
       if (!urls.length) {
         return
       }
@@ -50,16 +49,27 @@ module.exports = (client,message) => {
 
         var randomColor = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0')
 
-        axios.get('https://luxinhe-bot.herokuapp.com/getchannel').then((resp) => {
+        axios.get('https://luxinhe-bot.herokuapp.com/getchannel')
+				.then((resp) => {
           resp.data.result.map(channel_id => {
             const messageEmbed = new discord.MessageEmbed()
               .setColor(randomColor)
               .setAuthor(config.bot_name, client.user.displayAvatarURL())
               .setTitle(doc.data.result[index].message)
               .setImage(urls[Math.floor(Math.random() * urls.length)])
-            client.channels.cache.get(channel_id.channel_id).send(messageEmbed)
+            try {
+							client.channels.cache.get(channel_id.channel_id).send(messageEmbed)
+							// If channel exists: send message
+						} catch (err) {
+							// Else: print error and 1 second after clear console
+							console.log('Error: '+err)
+							setTimeout(() => {
+								console.clear()
+							}, 1000)
+						}
           })
         })
+				// If api not works print error on console
 				.catch(err => console.log(err))
       })
     })
