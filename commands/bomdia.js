@@ -6,7 +6,7 @@ const config = require('../config.json')
 
 module.exports.run = async(client,message,args)=>{
   var options = {
-    url: `https://results.dogpile.com/serp?q=bomdia%20shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=f5Q8QcTqCgxF10`,
+    url: `https://results.dogpile.com/serp?qc=images&q=bomdia+shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=LhW0iLupDXfW10`,
 		method: 'GET',
 		headers: {
 			'Accept': 'text/html',
@@ -54,5 +54,3 @@ module.exports.run = async(client,message,args)=>{
     })
   })
 }
-
-

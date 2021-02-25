@@ -15,8 +15,7 @@ module.exports = (client,message) => {
     //0 0 10 * * *
 
     var options = {
-			//
-      url: `https://results.dogpile.com/serp?q=bomdia%20shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=f5Q8QcTqCgxF10`,
+    	url: `https://results.dogpile.com/serp?qc=images&q=bomdia+shitpost&page=${Math.floor(Math.random(0) * 5)}&sc=LhW0iLupDXfW10`,			
       method: 'GET',
       headers: {
         'Accept': 'text/html',
