@@ -8,6 +8,7 @@ module.exports.run = async(client,message,args)=>{
   const messageEmbed = new discord.MessageEmbed()
     .setColor(randomColor)
     .setAuthor(config.bot_name)
-    .setTitle(`🏓A latencia do bot é de ${Date.now() - message.createdTimestamp}ms. E a latencia da API é de ${Math.round(client.ws.ping)}ms`)
+    .setTitle(`Clique aqui para abrir o site do bot`)
+    .setURL('https://luxinhe-bot.ga')
   message.channel.send(messageEmbed)
 }

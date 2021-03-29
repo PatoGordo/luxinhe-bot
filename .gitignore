@@ -1,2 +1,4 @@
-.env
+.replit
 config.json
+Procfile
+.gitignore

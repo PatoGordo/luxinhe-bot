@@ -1,11 +1,11 @@
 const discord = require('discord.js')
-const axios = require('axios')
 const config = require('../config.json')
+const firebase = require('../services/firebase.js')
 require('dotenv/config')
 
 module.exports.run = async (client, message, args) => {
-  axios.post("https://luxinhe-bot.herokuapp.com/removechannel", { channel_id: message.channel.id })
-    .then(res => {})
+  firebase.firestore().collection("channels").doc(message.channel.id).delete()
+
   const messageEmbed = new discord.MessageEmbed()
     .setColor('#FF1800')
     .setAuthor(config.bot_name, client.user.displayAvatarURL())

@@ -32,6 +32,10 @@ module.exports.run = async(client,message,args)=>{
         value: "O bot vai mandar uma mensagem de bom dia aleatoria, com uma imagem de bom dia aleatória, no chat.",
       },
       {
+        name: `**${prefix}novo-bomdia**`,
+        value: `Use esse comando para adicionar novas images a lista de imagens de bomdia ex: "${prefix}novo-bomdia Mensagem de bomdia(**Não se esqueça de anexar uma imagem ou url de imagem**)"`,
+      },
+      {
         name: `**${prefix}abraço || abraco**`,
         value: `O bot vai mandar um gif de abraço marcando quem abraçou e quem foi abraçado, ex: "**${prefix}abracar @alguém**"`,
       },
@@ -49,22 +53,22 @@ module.exports.run = async(client,message,args)=>{
       },
       {
         name: `**${prefix}vergonha**`,
-        value: `O bot vai mandar um gif de vergonha marcando quem te envergonhou, ex: "**${prefix}envergonhado @alguém**"`,
+        value: `O bot vai mandar um gif de vergonha marcando quem te envergonhou, ex: "**${prefix}vergonha @alguém**"`,
       },
       {
         name: `**${prefix}ping**`,
         value: `O bot vai mostrar o ping da API e do BOT`,
       },
       {
-        name: `Link para adiconar imagens ao bot`,
+        name: `Link do site do bot`,
         value: "https://luxinhe-bot.ga/",
       },
       {
-        name: `Twitter da luxinhe`,
+        name: `Twitter da Luxinhe`,
         value: "https://twitter.com/luxinhecute",
       },
       {
-        name: `Twitter do criador do bost`,
+        name: `Twitter do criador do boste`,
         value: "https://twitter.com/patogordoo",
       },
       {

@@ -8,7 +8,7 @@ module.exports = (client,message) => {
 			.setColor(randomColor)
 			.setAuthor(config.bot_name, client.user.displayAvatarURL())
 			.setTitle(`Eu respondo pelo prefixo ${config.prefix}`)
-			.setDescription(`Tente usando ${config.prefix}help`)
+			.setDescription(`Tente usando "${config.prefix}help"`)
 		return message.reply(messageEmbed)
 	}
 	if (message.author.bot) return
